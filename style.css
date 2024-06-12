@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background: #000; */
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* section-1 starts here */
+.main {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.parallax-image {
+    height: 50vh;
+    width: 100;
+    background-image: url(assets/paralaximage-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: fill;
+}
+
+header h1 {
+    max-width: fit-content;
+    font-size: xx-larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+h1 i {
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+}
+
+/* .fa-burger {
+    display: none;
+} */
+
+header>a {
+    text-decoration: none;
+    color: crimson;
+}
+
+#home {
+    position: absolute;
+    top: 35vh;
+    right: 0px;
+    left: 0;
+    z-index: 1;
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    justify-items: center;
+    align-content: center;
+    padding: 2vh;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* text-decoration: none; */
+    color: white;
+    font-size: large;
+    transition: all 0.5s;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    text-decoration: chartreuse;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+/* section-1 ends here */
+
+/* introduction section starts here */
+
+.normal {
+    position: relative;
+    max-height: 50vh;
+    width: 100%;
+    /* overflow-y: hidden */
+    /* background-color: #e58989; */
+}
+
+.container {
+    height: 35vh;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 3vh;
+}
+
+.container>h1 {
+    /* min-width: 5vw; */
+    font-size: 5vh;
+    font-weight: 400;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.container>p {
+    margin-top: 3vh;
+    text-align: center;
+    max-width: 45%;
+    font-size: 2.5vh;
+    line-height: 2;
+}
+
+/* introduction section ends here */
+
+/* button section starts here */
+
+.btns {
+    /* position: absolute;
+    bottom: 5;
+    z-index: 1; */
+    /* margin-top: 5%; */
+    height: 25%;
+    width: 100%;
+    margin-top: 3vh;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    flex-wrap: wrap;
+
+}
+
+.btns>a {
+    text-decoration: none;
+}
+
+.btn {
+    /* background-color: rgb(83, 124, 21); */
+    padding: 2vh;
+    font-size: medium;
+    border: 1px solid rgb(83, 124, 21);
+    color: rgb(83, 124, 21);
+    border-radius: 1px;
+    text-align: center;
+    min-width: 10vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(83, 124, 21);
+    color: white;
+}
+
+/* button section ends here */
+
+/* cards section starts here */
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    height: auto;
+    width: 70%;
+    padding: 2vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Ensure the items inside the card are stacked vertically */
+    align-items: center;    /* Center align items horizontally */
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-1 .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+}
+
+.image-1 {
+    display: flex;       /* Use flexbox to center the image */
+    justify-content: center;
+    align-items: center;
+    width: 100%;         /* Make the container take full width of the card */
+}
+
+.image-1 img {
+    object-fit: contain;
+    margin: 2vh;
+    box-shadow: 2px salmon;
+    width: 250px; /* Add unit for width */
+}
+
+
+
+.title-1 h1{
+    margin: 1vh 2vh;
+    font-size: large;
+}
+
+.para-1 {
+    margin: 1vh 2vh;
+}
+
+.price-1 {
+    margin: 2vh 2vh;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    min-width: 20vh;
+    background-color: rgb(83, 124, 21);
+    color: white;
+    padding: 2.5vh;
+    margin: 2vh;
+    cursor: pointer;
+    text-wrap: nowrap;
+    border-radius: 2px;
+}
+
+.btn-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+ /* template section starts here */
+
+.about {
+    /* border: 1px solid; */
+    min-height: 50vh;
+    width: 100;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2vh;
+    margin-top: 5%;
+}
+
+.content {
+    /* border: 1px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; 
+    gap: 2rem;
+}
+.hero-image {
+    
+    /* align-content: flex-start; */
+}
+
+.about-info {
+    align-self: flex-end;
+    justify-self: flex-start;
+    width: 40%;
+}
+
+.about-info p {
+    justify-self: flex-start;
+    margin-top: 2vh;
+    line-height: 1.5;
+    text-wrap: wrap;
+}
+
+.button {
+    height: 10vh;
+    width: 100;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 1rem;
+}
+
+button {
+    border: 1px solid rgb(83, 124, 21);
+    padding: 2vh;
+    background-color: white;
+    color: green;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+footer {
+    height: 10vh;
+    width: 100;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+/* template section ends here */
+
+@media (max-width: 950px) {
+
+    #home {
+        position: absolute;
+        top: 40vh;
+        right: 0px;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    .container {
+        max-height: 70%;
+        width: 100%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+        padding: 3vh;
+    }
+
+    .container>h1 {
+        /* min-width: 5vw; */
+        font-size: 5vh;
+        font-weight: 400;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .container>p {
+        margin-top: 3vh;
+        text-align: center;
+        max-width: 50vh;
+        font-size: 2.5vh;
+        line-height: 1.5;
+        text-wrap: wrap;
+        height: 10%;
+    }
+
+    .normal {
+        max-height: 40vh;
+        width: 100%;
+        /* background-color: #e58989; */
+    }
+
+    .btns {
+        margin-top: vh;
+    }
+
+    .btn {
+        color: white;
+        /* background-color: rgb(83, 124, 21); */
+        padding: 2vh;
+        color: rgb(83, 124, 21);
+        font-size: medium;
+        border: 1px solid rgb(83, 124, 21);
+        border-radius: 1px;
+        text-align: center;
+        min-width: 10vh;
+    }
+
+    /* template section starts here */
+    .about {
+        min-height: 50vh;
+        width: 100;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2vh;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .hero-image img {
+        width: 100vh;
+        /* align-content: flex-start; */
+    }
+    
+    .about-info {
+        align-self: flex-start;
+        min-width: 70%;
+    }
+    
+    .about-info p {
+        margin-top: 2vh;
+        line-height: 1.5;
+        text-wrap: wrap;
+    }
+
+    /* template section ends here */
+
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+}
+
+@media (min-width: 500px) {
+    #home {
+        position: absolute;
+        top: 37vh;
+        right: 0px;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .parallax-image {
+        height: 50vh;
+        width: 100;
+        background-image: url(assets/paralaximage-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        object-fit: cover;
+        margin-top: 0;
+        top: 0;
+    }
+
+    #home {
+        position: absolute;
+        top: 30vh;
+        right: 0px;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    header {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    header a h1 i{
+        justify-self: left;
+    }
+
+    nav {
+        justify-self: right;
+    }
+
+    .container {
+        max-height: auto;
+        width: 100%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+        padding: 3vh;
+    }
+
+    .about {
+        min-width: 100%;
+    }
+
+    .about-info {
+        min-width: 100%;
+    }
+
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .btns {
+        margin-top: 10vh;
+    }
+
+    .hero-image img {
+        /* overflow: hidden; */
+        width: 100%;
+        /* align-content: flex-start; */
+    }
+}

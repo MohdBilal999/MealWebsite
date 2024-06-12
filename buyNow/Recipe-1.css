@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background: #000; */
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-bottom: 2vh; */
+    overflow-y: auto;
+}
+
+/* section-1 starts here */
+.main {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.parallax-image {
+    height: 50vh;
+    width: 100;
+    background-image: url(./assets/paralaximage-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: fill;
+}
+
+header h1 {
+    max-width: fit-content;
+    font-size: xx-larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+h1 i {
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+}
+
+/* .fa-burger {
+    display: none;
+} */
+
+header>a {
+    text-decoration: none;
+    color: crimson;
+}
+
+#home {
+    position: absolute;
+    top: 35vh;
+    right: 0px;
+    left: 0;
+    z-index: 1;
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    justify-items: center;
+    align-content: center;
+    padding: 2vh;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* text-decoration: none; */
+    color: white;
+    font-size: large;
+    transition: all 0.5s;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    text-decoration: chartreuse;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+/* ChcikenCurry Recipe */
+
+.recipe, .recipe-1 {
+    min-height: 70vh;
+    width: 100;
+    background: red;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+ .recipe-2 {
+    min-height: 70vh;
+    width: 100;
+    background: rgb(176, 144, 144);
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.recipe-3 {
+    min-height: 70vh;
+    width: 100;
+    background: rgb(179, 202, 31);
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.recipe-4 {
+    min-height: 50vh;
+    width: 100;
+    background: rgb(26, 124, 189);
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+}
+
+h1 {
+    margin: 2vh;
+    color: #d2691e;
+}
+
+.recipe {
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ingredients, .instructions {
+    margin: 10px 0;
+}
+
+.source {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.chickenCurry-Recipe {
+    min-height: 50vh;
+    width: 100;
+    border-radius: 5px;
+    background: rgb(243, 85, 0);
+    margin: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.image-1 {
+    
+}
+

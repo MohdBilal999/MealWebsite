@@ -36,13 +36,11 @@ function setActiveButton(activeButton) {
     buttons.forEach(button => {
         button.classList.remove('active');
     });
-    // Add active class to the clicked button
     activeButton.classList.add('active');
 }
 
 // Function to show specified cards and hide others
 function showOnlyCards(cardsToShow, cardsToHideArrays) {
-    // Show specified cards
     cardsToShow.forEach(card => {
         card.style.display = 'block';
     });

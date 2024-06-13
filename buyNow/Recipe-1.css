@@ -8,10 +8,8 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* background: #000; */
     color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* padding-bottom: 2vh; */
     overflow-y: auto;
 }
 
@@ -102,86 +100,20 @@ nav ul a {
     text-decoration: none;
 }
 
-/* ChcikenCurry Recipe */
+@media (max-width: 450px){
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-.recipe, .recipe-1 {
-    min-height: 70vh;
-    width: 100;
-    background: red;
-    margin: 2vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    #home {
+        position: absolute;
+        top: 25vh;
+        right: 0px;
+        left: 0;
+        z-index: 1;
     
+    }
 }
 
- .recipe-2 {
-    min-height: 70vh;
-    width: 100;
-    background: rgb(176, 144, 144);
-    margin: 2vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.recipe-3 {
-    min-height: 70vh;
-    width: 100;
-    background: rgb(179, 202, 31);
-    margin: 2vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.recipe-4 {
-    min-height: 50vh;
-    width: 100;
-    background: rgb(26, 124, 189);
-    margin: 2vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 2vh;
-}
-
-h1 {
-    margin: 2vh;
-    color: #d2691e;
-}
-
-.recipe {
-    /* border: 1px solid #ccc; */
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.ingredients, .instructions {
-    margin: 10px 0;
-}
-
-.source {
-    font-size: 0.9em;
-    color: #555;
-}
-
-.chickenCurry-Recipe {
-    min-height: 50vh;
-    width: 100;
-    border-radius: 5px;
-    background: rgb(243, 85, 0);
-    margin: 2vh;
-    padding: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.image-1 {
-    
-}
 
